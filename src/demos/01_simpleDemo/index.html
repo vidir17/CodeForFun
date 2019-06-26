@@ -3,6 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="../../css/main.css">
     <title>React - simple demo</title>
     <script src="../../js/react.min.js"></script>
     <script src="../../js/react-dom.min.js"></script>
@@ -49,17 +50,19 @@
             render: function(){
                 return(
                     <div className ="commentContainer">
-                        <div>Text of whatever</div>
+                        <div class="blue1">Text of whatever</div>
                         <button onClick={this.edit} className="button-primary">Edit</button>
                         <button onClick={this.remove} className="button-danger">Remove</button>
-                    
                     </div>
 
                 );
             }
         });
+        
+        
 
         ReactDOM.render(
+            
             <div className="board">
             <Comment>Hey now</Comment>
              </div>
